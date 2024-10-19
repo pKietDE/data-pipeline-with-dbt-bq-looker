@@ -59,10 +59,25 @@ Tải file IP2Loc : ![link](https://lite.ip2location.com/database/db11-ip-countr
 ## Cấu trúc dự án
 project/
 │
-├── crawl_image_glamira.py # Script chính
-├── upload_gcs.py  # Script để upload các thư mục đã export từ mongodb ra
-├── requirements.txt     # Danh sách các thư viện cần thiết
-└── README.md  # File này
+├── crawl_image_glamira.py   # Script chính để crawl dữ liệu
+├── upload_gcs.py            # Script để upload các thư mục đã export từ MongoDB
+├── requirements.txt         # Danh sách các thư viện cần thiết
+├── README.md                # File này
+│
+├── config/
+│   └── config.yaml          # File cấu hình cho dự án
+│
+├── data/
+│   ├── raw/                 # Dữ liệu thô sau khi crawl
+│   └── processed/           # Dữ liệu đã qua xử lý
+│
+├── dbt/
+│   ├── models/              # Các model DBT
+│   ├── macros/              # Macros DBT
+│   └── dbt_project.yml      # File cấu hình DBT
+│
+└── docs/
+└── images/              # Hình ảnh cho documentation
 
 ## Đóng góp
 
