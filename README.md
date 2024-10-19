@@ -62,6 +62,7 @@ Tải file IP2Loc : ![link](https://lite.ip2location.com/database/db11-ip-countr
 project/
 │
 ├── <span style="color: #4CAF50;">crawl_image_glamira.py</span>   # Script chính để crawl dữ liệu
+├── <span style="color: #4CAF50;">crawl_product_detail.py</span>  # Script chính để crawl chi tiết sản phẩm 
 ├── <span style="color: #4CAF50;">upload_gcs.py</span>            # Script để upload các thư mục đã export từ MongoDB
 ├── <span style="color: #FFC107;">data_image.csv</span>           # Data chứa ảnh của sản phẩm
 ├── <span style="color: #FFC107;">ip_location_full.csv</span>     # Data chứa vị trí của người dùng dựa vào ip 
