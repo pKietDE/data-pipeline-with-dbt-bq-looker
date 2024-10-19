@@ -63,6 +63,8 @@ project/
 │
 ├── <span style="color: #4CAF50;">crawl_image_glamira.py</span>   # Script chính để crawl dữ liệu
 ├── <span style="color: #4CAF50;">upload_gcs.py</span>            # Script để upload các thư mục đã export từ MongoDB
+├── <span style="color: #FFC107;">data_image.csv</span>           # Data chứa ảnh của sản phẩm
+├── <span style="color: #FFC107;">ip_location_full.csv</span>     # Data chứa vị trí của người dùng dựa vào ip 
 ├── <span style="color: #FFC107;">requirements.txt</span>         # Danh sách các thư viện cần thiết
 ├── <span style="color: #2196F3;">README.md</span>                # File này
 │
