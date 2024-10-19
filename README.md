@@ -30,7 +30,7 @@ Từ những dữ liệu đã được crawl chúng ta sẽ cùng với nó và 
 - dbt
 - dbt-bigquery
 
-Tải file IP2Loc : ![link](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)
+Tải file IP2Loc : ![link tải](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)
 
 ## Cài đặt
 
@@ -42,12 +42,17 @@ Tải file IP2Loc : ![link](https://lite.ip2location.com/database/db11-ip-countr
 
 Để chạy script, sử dụng lệnh sau:
 + python3 crawl_image_glamira.py # Script này sẽ crawl dữ liệu từ trang Glamira và lưu vào MongoDB.
-+ upload_gcs.py # Script này sẽ export dữ liệu từ MongoDB và upload lên GCS.
++ python3 crawl_product_detail.py #Script này sẽ crawl tên sản phẩm đã được lọc theo product_id trong 41 triệu bản ghi
++ python3 upload_gcs.py # Script này sẽ export dữ liệu từ MongoDB và upload lên GCS.
 
 ## Cấu hình
 1. Cấu hình Google Cloud:
 - Đảm bảo bạn đã cài đặt và cấu hình Google Cloud SDK
-- Thiết lập biến môi trường GOOGLE_APPLICATION_CREDENTIALS
+- Thiết lập biến môi trường GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json'
++ vào service account => chọn project sử dụng => tabs key => create new key => json
+  
+# Đối với linux 
++ vào bashrc => thêm vào cuối dòng => export GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json' => Lưu file => source ./bashrc
 
 ## Luồng dữ liệu
 1. Crawl dữ liệu từ Glamira -> MongoDB
