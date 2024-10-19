@@ -1,0 +1,33 @@
+# Loại bỏ thư mục môi trường ảo
+venv/
+env/
+
+# Loại bỏ các file biên dịch của Python
+__pycache__/
+*.py[cod]
+
+# Loại bỏ file fixdata
+fixdata
+
+# Loại bỏ các file tạm thời hoặc backup
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+
+# Loại bỏ file nhật ký (log)
+*.log
+
+# Loại bỏ thư mục và file cấu hình của Visual Studio Code
+.vscode/
+
+# Loại bỏ file hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Loại bỏ các file lock hoặc gói cài đặt
+Pipfile.lock
+package-lock.json
+yarn.lock
+
