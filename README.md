@@ -51,7 +51,7 @@ Tải file IP2Loc : ![link tải](https://lite.ip2location.com/database/db11-ip-
 - Thiết lập biến môi trường GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json'
 + vào service account => chọn project sử dụng => tabs key => create new key => json
   
-### Đối với linux 
+### <strong><small>Đối với Linux</small></strong>
 + vào bashrc => thêm vào cuối dòng => export GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json' => Lưu file => source ./bashrc
 
 ## Luồng dữ liệu
