@@ -72,6 +72,7 @@ project/
 ├── <span style="color: #FFC107;">data_image.csv</span>           # Data chứa ảnh của sản phẩm
 ├── <span style="color: #FFC107;">ip_location_full.csv</span>     # Data chứa vị trí của người dùng dựa vào ip 
 ├── <span style="color: #FFC107;">requirements.txt</span>         # Danh sách các thư viện cần thiết
+├── <span style="color: #2196F3;">gcf_config.py</span>            # File để cấu hình gg cloud functions trên gcp 
 ├── <span style="color: #2196F3;">README.md</span>                # File này
 │
 </code>
