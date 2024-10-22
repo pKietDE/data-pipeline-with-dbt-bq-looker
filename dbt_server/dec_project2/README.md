@@ -51,4 +51,4 @@ Nếu bạn gặp bất kỳ vấn đề nào hoặc muốn tìm hiểu sâu hơ
 
 Đảm bảo rằng đã cấu hình đúng file **dbt_project.yml** trước khi bắt đầu chạy các lệnh của DBT. Nếu gặp bất kỳ vấn đề gì, hãy sử dụng lệnh `dbt debug` để kiểm tra cấu hình và tìm lỗi.
 
-Chúc bạn thành công trong việc triển khai và phát triển dự án của mình với DBT.
+Chúc bạn thành công trong việc triển khai và phát triển dự án.
