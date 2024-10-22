@@ -56,7 +56,7 @@ Tải file IP2Loc : ![link tải](https://lite.ip2location.com/database/db11-ip-
 
 ## Luồng dữ liệu
 1. Crawl dữ liệu từ Glamira -> MongoDB
-2. Export từ MongoDB -> Google Cloud Storage
+2. Export từ MongoDB -> Google Cloud Storage -> Cloud function -> Bigquery
 3. Xử lý dữ liệu bằng DBT trên BigQuery
 4. Hiển thị kết quả trên Looker
 
