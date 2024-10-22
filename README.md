@@ -51,15 +51,16 @@ Tải file IP2Loc : ![link tải](https://lite.ip2location.com/database/db11-ip-
 - Đảm bảo bạn đã cài đặt và cấu hình Google Cloud SDK
 - Thiết lập biến môi trường GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json'
 + vào service account => chọn project sử dụng => tabs key => create new key => json
+  
+**Đối với Linux**
++ vào bashrc => thêm vào cuối dòng => export GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json' => Lưu file => source ./bashrc
 
 ## Cài đặt cloud function 
 + Vào GCP (Đăng nhập / Đăng ký credit để dùng thử) -> Search + Cloud run functions -> Create functions
 -> Chọn trigger type : Cloud Storage -> Event type : Finalized -> Tiếp theo -> chọn phiên bản python
 -> coppy code của file gcf_config.py -> thêm các thư viện trong file requirements.txt bên dưới comment cloud
 -> deploy .
-  
-**Đối với Linux**
-+ vào bashrc => thêm vào cuối dòng => export GOOGLE_APPLICATION_CREDENTIALS='/path/to/key.json' => Lưu file => source ./bashrc
+
 
 ## Luồng dữ liệu
 1. Crawl dữ liệu từ Glamira -> MongoDB
