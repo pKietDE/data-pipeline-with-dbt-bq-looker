@@ -66,15 +66,30 @@ Tải file IP2Loc : ![link tải](https://lite.ip2location.com/database/db11-ip-
 <code>
 project/
 │
-├── <span style="color: #4CAF50;">crawl_image_glamira.py</span>   # Script chính để crawl dữ liệu
-├── <span style="color: #4CAF50;">crawl_product_detail.py</span>  # Script chính để crawl chi tiết sản phẩm 
-├── <span style="color: #4CAF50;">upload_gcs.py</span>            # Script để upload các thư mục đã export từ MongoDB
-├── <span style="color: #FFC107;">data_image.csv</span>           # Data chứa ảnh của sản phẩm
-├── <span style="color: #FFC107;">ip_location_full.csv</span>     # Data chứa vị trí của người dùng dựa vào ip 
-├── <span style="color: #FFC107;">requirements.txt</span>         # Danh sách các thư viện cần thiết
-├── <span style="color: #2196F3;">gcf_config.py</span>            # File để cấu hình gg cloud functions trên gcp 
-├── <span style="color: #2196F3;">README.md</span>                # File này
+├── <span style="color: #4CAF50;">crawl_image_glamira.py</span>   # Script chính để crawl dữ liệu.
+├── <span style="color: #4CAF50;">crawl_product_detail.py</span>  # Script chính để crawl chi tiết sản phẩm .
+├── <span style="color: #4CAF50;">upload_gcs.py</span>            # Script để upload các thư mục đã export từ MongoDB.
+├── <span style="color: #FFC107;">data_image.csv</span>           # Data chứa ảnh của sản phẩm.
+├── <span style="color: #FFC107;">ip_location_full.csv</span>     # Data chứa vị trí của người dùng dựa vào ip .
+├── <span style="color: #FFC107;">requirements.txt</span>         # Danh sách các thư viện cần thiết.
+├── <span style="color: #2196F3;">gcf_config.py</span>            # File để cấu hình gg cloud functions trên gcp .
+├── <span style="color: #2196F3;">README.md</span>                # File này.
+
+dbt-server/
 │
+├── <span style="color: #4CAF50;">analyses</span>   # Folder chứa các câu query có thể trả về kết quả để phân tích .
+├── <span style="color: #4CAF50;">macros</span>   # Folder Chứa các macro được dùng để tái sử dụng trong các câu query. Macros là các đoạn mã .
+├── <span style="color: #4CAF50;">models</span>   # Folder Chứa các mô hình dữ liệu, các câu query được xây dựng để mô tả cách dữ liệu sẽ được tổ chức và chuyển đổi từ raw data thành các bảng kết quả.
+  ├── <span style="color: #4CAF50;">view</span>   # thư mục con của models, chứa các câu query SQL tạo các "view", những bảng tạm để phục vụ việc hiển thị dữ liệu mà không cần lưu trữ dữ liệu thực tế.
+├── <span style="color: #4CAF50;">seeds</span>   # Folder Chứa các file tĩnh (thường là CSV) để lưu trữ các dữ liệu tĩnh hoặc cơ sở. Thường các file này sẽ được nạp vào cơ sở dữ liệu trong quá trình triển khai để phục vụ việc phân tích hoặc mapping dữ liệu.
+├── <span style="color: #4CAF50;">snapshoots</span>   # Folder Chứa các câu query snapshot, được dùng để lưu trữ lại một bản chụp dữ liệu tại thời điểm cụ thể. Điều này giúp theo dõi sự thay đổi của dữ liệu qua thời gian (data versioning).
+├── <span style="color: #4CAF50;">tests</span>   # Folder Chứa các bài kiểm tra để xác nhận tính chính xác của dữ liệu.
+├── <span style="color: #4CAF50;">README.md</span>   # file hướng dẫn cách sử dụng dbt-server
+├── <span style="color: #4CAF50;">dbt_project.yml </span>   # Folder Chứa các bài kiểm tra để xác nhận tính chính xác của dữ liệu.
+├── <span style="color: #4CAF50;">tests</span>   # Folder Chứa các bài kiểm tra để xác nhận tính chính xác của dữ liệu.
+├── <span style="color: #4CAF50;">dbt_project.yml</span>   # file cấu hình chính của một dự án DBT.
+├── <span style="color: #4CAF50;">package-lock.yml</span>   # file liên quan đến việc khóa phiên bản của các gói mà dự án phụ thuộc vào, để đảm bảo rằng tất cả các thành viên trong nhóm đều sử dụng cùng một phiên bản của các thư viện và các dependency không bị thay đổi bất ngờ khi cài đặt lại.
+├── <span style="color: #4CAF50;">packages.yml</span>   # file để quản lý các gói (packages) bên ngoài mà dự án DBT sử dụng.
 </code>
 </pre>
 
@@ -84,4 +99,8 @@ project/
 
 ## Hình ảnh
 ![image](https://github.com/user-attachments/assets/ed466765-cfa8-4912-aafc-c524b6abd20c)
+![image](https://github.com/user-attachments/assets/11144f95-4a38-49b1-8dc2-c7c0142fe965)
+![image](https://github.com/user-attachments/assets/56bf6af9-2c4e-4729-aaea-526826698144)
+
+
 
