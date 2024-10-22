@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: fact_order
+    description: "Bảng fact cho đơn hàng"
+
+  - name: dim_product
+    description: "Bảng dimension cho sản phẩm"
+
+  - name: view_item_revenue
+    description: "Tính doanh thu của từng sản phẩm."
+ 
+  - name: view_total_sales
+    description: "Tính doanh thu theo từng tháng trong năm"
+
+sources:
+  - name: ip_locations
+    database: optimum-archery-434816-e4
+    schema: dec_project2
+    tables:
+      - name: ip_locations
+        description: "Bảng chứa thông tin địa lý của người dùng"
+
+  - name: product_infor
+    database: optimum-archery-434816-e4
+    schema: dec_project2
+    tables:
+      - name: product_infor
+        description: "Bảng chứa thông tin chi tiết của sản phẩm"
+
+  - name: glamira_raw
+    database: optimum-archery-434816-e4
+    schema: dec_project2
+    tables:
+      - name: glamira_raw
+        description: "Dữ liệu thô từ Glamira"
+
+  - name: product_image
+    database: optimum-archery-434816-e4
+    schema: dec_project2
+    tables:
+      - name: product_image
+        description: "Dữ liệu Hinh anh cua san pham"

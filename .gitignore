@@ -1,6 +1,7 @@
 # Loại bỏ thư mục môi trường ảo
 venv/
 env/
+.venv/
 
 # Loại bỏ các file biên dịch của Python
 __pycache__/

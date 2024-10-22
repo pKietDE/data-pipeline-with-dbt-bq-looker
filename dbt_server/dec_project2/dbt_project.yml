@@ -1,0 +1,26 @@
+name: 'dec_project2'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dec_project2'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+vars:
+  surrogate_key_treat_nulls_as_empty_strings: true
+
+models:
+  dec_project2:
+    +materialized: table
+    view:
+      +materialized: view 
